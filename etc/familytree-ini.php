@@ -14,8 +14,8 @@ $config = array(
 
     // db
     // sample-1: single db
-    // 'dsn' => 'mysql://user:password@server/database',
-    //
+    'dsn' => 'postgresql://postgres:f_tree2017@localhost/postgres',
+
     // sample-2: single db w/ multiple users
     // 'dsn'   => 'mysql://rw_user:password@server/database', // read-write
     // 'dsn_r' => 'mysql://ro_user:password@server/database', // read-only

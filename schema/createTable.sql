@@ -1,4 +1,4 @@
-﻿CREATE TABLE t_accounts(
+CREATE TABLE t_accounts(
   user_id serial PRIMARY KEY,
   user_name text UNIQUE NOT NULL,
   password text NOT NULL,
@@ -7,7 +7,7 @@
 
 
 CREATE TABLE t_persons(
-  person_id serial PRIMARY KEY, 
+  person_id serial PRIMARY KEY,
   name text,
   sex  integer,
   birthday date,
@@ -17,6 +17,7 @@ CREATE TABLE t_persons(
 
 CREATE TABLE t_notes(
   note_id serial PRIMARY KEY,
+  note_title text,
   body text
 );
 
@@ -36,6 +37,7 @@ CREATE TABLE t_relations(
 
 CREATE TABLE t_references(
   reference_id serial PRIMARY KEY,
+  reference_title text,
   image_name text,
   note text
 );
