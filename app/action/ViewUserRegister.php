@@ -31,6 +31,15 @@ class Familytree_Form_ViewUserRegister extends Familytree_ActionForm
         ),
       );
 
+      'user_password' => array(
+          'type' => VAR_TYPE_STRING,
+          'form_type' => FORM_TYPE_TEXTAREA,
+          'name' => 'パスワード',
+          'max' => 140,
+          'required' => true,
+        ),
+      );
+
 
 
        /*
