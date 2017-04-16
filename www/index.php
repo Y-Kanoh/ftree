@@ -13,4 +13,3 @@ require_once dirname(__FILE__) . '/../app/Familytree_Controller.php';
  * Run application.
  */
 Familytree_Controller::main('Familytree_Controller', 'index');
-
