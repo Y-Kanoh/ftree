@@ -1,6 +1,6 @@
 <?php
 /**
- *  ViewUserRegister.php
+ *  CompleteRegistration.php
  *
  *  @author     {$author}
  *  @package    Familytree
@@ -8,13 +8,13 @@
  */
 
 /**
- *  ViewUserRegister view implementation.
+ *  completeRegistration view implementation.
  *
  *  @author     {$author}
  *  @access     public
  *  @package    Familytree
  */
-class Familytree_View_ViewUserRegister extends Familytree_ViewClass
+class Familytree_View_CompleteRegistration extends Familytree_ViewClass
 {
     /** @var boolean  layout template use flag   */
     public $use_layout = true;
@@ -28,3 +28,4 @@ class Familytree_View_ViewUserRegister extends Familytree_ViewClass
     {
     }
 }
+

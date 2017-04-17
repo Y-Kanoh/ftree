@@ -1,6 +1,6 @@
 <?php
 /**
- *  ViewUserRegister.php
+ *  CompleteRegistration.php
  *
  *  @author     {$author}
  *  @package    Familytree
@@ -8,13 +8,13 @@
  */
 
 /**
- *  ViewUserRegister Form implementation.
+ *  completeRegistration Form implementation.
  *
  *  @author     {$author}
  *  @access     public
  *  @package    Familytree
  */
-class Familytree_Form_ViewUserRegister extends Familytree_ActionForm
+class Familytree_Form_CompleteRegistration extends Familytree_ActionForm
 {
     /**
      *  @access protected
@@ -37,8 +37,8 @@ class Familytree_Form_ViewUserRegister extends Familytree_ActionForm
           'max' => 140,
           'required' => true,
         ),
-      );
 
+    );
 
     /**
      *  Form input value convert filter : sample
@@ -57,16 +57,16 @@ class Familytree_Form_ViewUserRegister extends Familytree_ActionForm
 }
 
 /**
- *  ViewUserRegister action implementation.
+ *  completeRegistration action implementation.
  *
  *  @author     {$author}
  *  @access     public
  *  @package    Familytree
  */
-class Familytree_Action_ViewUserRegister extends Familytree_ActionClass
+class Familytree_Action_CompleteRegistration extends Familytree_ActionClass
 {
     /**
-     *  preprocess of ViewUserRegister Action.
+     *  preprocess of completeRegistration Action.
      *
      *  @access public
      *  @return string    forward name(null: success.
@@ -74,24 +74,23 @@ class Familytree_Action_ViewUserRegister extends Familytree_ActionClass
      */
     public function prepare()
     {
-        /**
         if ($this->af->validate() > 0) {
             // forward to error view (this is sample)
             return 'error';
         }
         $sample = $this->af->get('sample');
-        */
-        return null;
+
+        return ViewUserRegister;
     }
 
     /**
-     *  ViewUserRegister action implementation.
+     *  completeRegistration action implementation.
      *
      *  @access public
      *  @return string  forward name.
      */
     public function perform()
     {
-        return 'ViewUserRegister';
+        return 'completeRegistration';
     }
 }
